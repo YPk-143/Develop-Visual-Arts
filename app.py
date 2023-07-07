@@ -1,5 +1,6 @@
 from flask import Flask,redirect,url_for,render_template,request,flash,abort,session,send_file
 from flask_session import Session
+from backup_g.otp import genotp
 from key import secret_key,salt1,salt2
 from itsdangerous import URLSafeTimedSerializer
 from stoken import token
